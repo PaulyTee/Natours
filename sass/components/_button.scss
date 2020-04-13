@@ -15,7 +15,7 @@
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -27,7 +27,7 @@
     &:focus {
         outline: none;
         transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.4);
     }
 
     &--white {
@@ -36,6 +36,15 @@
 
         &::after {
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }
     }
 
@@ -66,6 +75,7 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
+        font-weight: 700;
         color: $color-primary;
         display: inline-block;
         text-decoration: none;
@@ -77,12 +87,12 @@
     &:hover {
         background-color: $color-primary;
         color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        box-shadow: 0 1rem 2rem rgba($color-black, .25);
         transform: translateY(-2px);
     }
 
     &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .25);
         transform: translateY(0);
     }
 }

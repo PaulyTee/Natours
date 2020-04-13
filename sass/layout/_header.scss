@@ -9,6 +9,7 @@
     background-position: top;
     /* sets where the img stays the same when it shrinks */
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     /* clip-path: shape(at what axis) creates the clipped angle on the heading */
 
