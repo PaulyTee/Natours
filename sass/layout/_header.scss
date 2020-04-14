@@ -24,12 +24,7 @@
     }
 
     &__text-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        /* absolute positioning and relative on its parent */
-        transform: translate(-50%, -50%);
-        /* Positions the centre of items in the centre*/
+        @include centerXY;
         text-align: center;
     }
 }
